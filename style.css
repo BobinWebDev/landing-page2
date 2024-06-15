@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+#nav h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#nav i {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#center {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+#center h1 {
+    font-size: 5.5vw;
+    font-weight: 500;
+    line-height: 5.6vw;
+    padding: 14px 0;
+    margin-left: 2%;
+}
+
+#center-in {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#center-in p {
+  font-size: 1.4vw;
+  font-weight: 400;
+  line-height: 2.4vw;
+  margin-left: 2%;
+}
+
+#right {
+  width: 20%;
+  margin-top: 20px;
+}
+
+.elem {
+  padding: 20px 0;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.elem a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.elem i {
+  font-size: 25px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.elem:hover a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.elem:hover i {
+  opacity: 1;
+}
+
+.elem:hover {
+  background-color: rgb(242, 240, 240);
+}
+
+#bottom {
+  margin-top: 2%;
+  height: 40%;
+  width: 100%;
+  background: url(glodi-miessi-sRzh83NhvRA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width:480px) {
+    #nav {
+        height: 60px;
+        gap: 20px;
+        padding: 0px 20px;
+      }
+      #nav h4 {
+        font-size: 13px;
+        font-weight: 400;
+        /* display: none; */
+      }
+      
+      #nav i {
+        font-size: 13px;
+      }
+      
+      #center {
+        width: 100%;
+        padding: 10px 20px;
+      }
+      
+      #center h1 {
+          font-size: 7vw;
+          font-weight: 500;
+          line-height: 7.6vw;
+          padding: 1px 0;
+          margin-left: 2%;
+      }
+      
+      #center-in {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+      }
+      
+      #center-in p {
+        font-size: 2.7vw;
+        font-weight: 400;
+        line-height: 4.5vw;
+        margin-left: 2%;
+      }
+      
+      #right {
+        width: 100%;
+        margin-top: 21px;
+      }
+      
+      .elem {
+        padding:10px 0;
+        border-top: 0.5px solid black;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      
+      .elem a {
+        text-decoration: none;
+        color: rgb(83, 83, 83);
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      #bottom {
+        height: 24.5%;
+        width: 100%;
+        background: url(glodi-miessi-sRzh83NhvRA-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+}
